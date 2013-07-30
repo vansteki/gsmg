@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
+<script src="assets/js/app.js"></script>
+<meta charset=utf-8 />
+<title>Static Google Map Generator</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div>
+    <div id='left-panel' class="span2">
+      <label>Zoom</label>
+      <select id='zoom'>
+        <option value="15">15
+      </select>
+      <label>Size</label>
+      <input type="text" id="width" class="input-mini" value="400" /> X <input type="text" id="height" class="input-mini" value="300" />
+      <label>Location</label>
+      <textarea id='editor' rows="10" cols="30">#map台中高鐵 #map北海道 #map東京</textarea>
+      <div><img id='magic' src="http://i.imgur.com/7Y0vEzB.png"  height="100" width="100"></div>
+    </div>
+    <div class="span999">
+      <div id='canvas'></div>
+      <div id='loading'></div>
+    </div>
+  </div>
+</div>
+  
+<span id="map-widget-panel-origin">
+  <span id="zoom-panel">
+      <div class="zoom-button zoom-in"><i class='icon-plus'></i></div>
+      <div class="zoom-button zoom-out"><i class='icon-minus'></i></div>
+  </span>
+</span>
+  
+  
+</body>
+</html>

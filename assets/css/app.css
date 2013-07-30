@@ -1,0 +1,89 @@
+body{
+  background-image:url('http://i.imgur.com/lbgjWsP.png');
+}
+
+#left-panel{
+    /*margin-left:0px;*/
+   background-image:url('http://i.imgur.com/6XGg9Rs.png');
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-left:40px;
+    padding-right:90px;
+    opacity:1;
+    -webkit-box-shadow: 0px 50px 50px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px 50px 50px rgba(50, 50, 50, 1);
+    box-shadow:         0px 50px 50px rgba(50, 50, 50, 1);
+}
+
+#editor{
+  float:left;
+  background-image: url('http://i.imgur.com/mjr53Ba.png');
+}
+#canvas{
+  float:left;
+  padding-left: 200px;
+  margin-left: 200px;
+}
+#loading{
+ float:left;
+}
+#magic{
+    position: fixed;
+    opacity:0.4;
+    bottom:0px;
+    left:140px;
+   margin-right:90px;
+}
+img{
+  z-index:10;
+}
+#map-item{
+  position:relative;
+}
+
+#map-widget-panel-origin{
+  display: none;
+  z-index:1000;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#map-widget-panel{
+  display: block;
+  z-index:1000;
+ position:absolute;
+ top:0;
+ right:0;
+}
+ 
+#zoom-panel{
+ 
+}
+ 
+.zoom-button{
+    background-color: silver;
+    width: 10px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    opacity:0.7;
+    filter:alpha(opacity=40); For IE8 and earlier 
+}
+ 
+.zoom-in{
+  margin-bottom: 10px;
+}
+ 
+.zoom-out{
+  margin-top: 10px;
+}
+ 
+.zoom-button i {
+  margin-left: 4px;
+}
